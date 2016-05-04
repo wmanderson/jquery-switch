@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Style Switcher</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+    <div id="modal-login" class="modal-login">
+        <div class="avatar">
+            <img src="avatar_placeholder.png" />
+        </div>
+        <form>
+            <fieldset class="form-group margin-top">
+                <input type="email" class="form-control material" id="formGroupExampleInput" placeholder="Enter your email">
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="password" class="form-control material" id="formGroupExampleInput2" placeholder="Password">
+            </fieldset>
+        </form>
+        <button type="button" class="btn btn-default submit">Submit</button>
+        <a class="helper" id="close-overlay">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        Close
+      </a>
+    </div>
+
+    <div class="container margin">
+        <h1 class="text-center">
+                Style Switcher
+            </h1>
+
+        <div class="row margin-top-20">
+            <div class="col-sm-4">
+                <button id="change-red" class="btn btn-danger btn-block">Change Red</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="change-green" class="btn btn-success btn-block">Change Green</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="change-blue" class="btn btn-primary btn-block">Change Blue</button>
+            </div>
+        </div>
+
+        <div class="row margin-top-20">
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-red"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-green"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-blue"></div>
+            </div>
+        </div>
+
+        <div class="row margin-top-20">
+            <div class="col-sm-4">
+                <button id="make-big" class="btn btn-danger btn-block">Make Big</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="make-small" class="btn btn-success btn-block">Make Small</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="animate-div" class="btn btn-primary btn-block">Animate Div</button>
+            </div>
+        </div>
+
+        <div class="row margin-top-20">
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-big"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-small"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="changing-divs" id="div-animate"></div>
+            </div>
+        </div>
+
+        <div class="row margin-top-20">
+            <div class="col-sm-12">
+                <button id="create-overlay" class="btn btn-info btn-block">Login</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

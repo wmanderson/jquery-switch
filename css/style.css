@@ -1,0 +1,122 @@
+html, body{
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-login {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  width: 350px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -175px;
+  background: #F7F7F7;
+  padding: 40px 40px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 1s ease-in;
+  -moz-transition: visibility 0s, opacity 1s ease-in;
+  transition: visibility 0s, opacity 1s ease-in;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s, opacity 1s ease-in;
+  -moz-transition: visibility 0s, opacity 1s ease-in;
+  transition: visibility 0s, opacity 1s ease-in;
+}
+
+.changing-divs {
+    border:#000 1px solid;
+    width:100%;
+    height:300px;
+    transition: .5s ease-in;
+}
+
+.small {
+  width: 50%;
+  height: 150px;
+}
+
+.big {
+  width: 200%;
+  height: 600px;
+}
+
+.margin-top-20 {
+    margin-top:20px;
+}
+
+.avatar {
+  margin: 0 auto;
+  border: 1px rgba(0, 0, 0, 0.0) solid;
+  border-radius: 100px;
+  width: 96px;
+}
+
+.avatar img {
+  text-align: center;
+  border: 1px rgba(0, 0, 0, 0.0) solid;
+  border-radius: 100px;
+  width: 105px;
+}
+
+.margin-top {
+  padding-top: 45px;
+}
+
+.material {
+  height: 50px;
+  border-radius: 1px;
+  font-size: 16px;
+  font-family: 'roboto', sans-serif;
+  color: #B6B6B6;
+}
+
+.submit {
+  font-family: 'roboto', sans-serif;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 10px;
+  background-color: #4d90fe;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: linear-gradient(top,#4d90fe,#4787ed);
+}
+
+.helper {
+  padding-top: 20px;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: #F44336;
+  cursor: pointer;
+}
